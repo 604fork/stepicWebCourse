@@ -5,4 +5,5 @@ sudo unlink /etc/nginx/sites-enabled/test.conf
 sudo unlink /etc/gunicorn.d/hello.py 
 sudo ln -s /home/box/web/etc/gunicornConfig.py /etc/gunicorn.d/hello.py
 sudo ln -s /home/box/web/etc/stepic.nginx.conf /etc/nginx/sites-enabled/test.conf
+sudo service gunicorn restart
 sudo /etc/init.d/nginx restart
